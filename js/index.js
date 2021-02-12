@@ -32,8 +32,8 @@ function Interface() {
   this.removeElement = function (element) {
     if (element.name === "delete") {
       element.parentElement.parentElement.parentElement.remove();
+      this.showMessage("the product was removed", "info");
     }
-    this.showMessage("the product was removed", "info");
   };
 
   this.showMessage = function (message, classCss) {
